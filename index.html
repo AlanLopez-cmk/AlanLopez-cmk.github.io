@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre Mendix</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/imgLogo.png" alt="Logo Mendix" class="logo">
+        <nav>
+            <a href="#" onclick="mostrarSeccion('mendix')">¿Qué es Mendix?</a> 
+            <a href="#" onclick="mostrarSeccion('ventajas')">Ventajas</a> 
+            <a href="#" onclick="mostrarSeccion('casos')">Casos de uso</a>
+            <a href="#" onclick="mostrarSeccion('recursos')">Recursos</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Mendix -->
+        <section id="mendix" class="active">
+            <h1>Mendix</h1>
+            <p>
+                Mendix es una plataforma de desarrollo de aplicaciones de bajo código (low-code) y 
+                sin código (no-code) que permite crear y mejorar continuamente aplicaciones web y 
+                móviles a escala. Es la plataforma low-code de Siemens Digital Industries Software,
+                diseñada para acelerar la entrega de aplicaciones empresariales.
+            </p>
+            <h3>Low-Code</h3>
+            <p>
+                Permite crear aplicaciones empresariales potentes, escalables y seguras con mucho
+                menos esfuerzo que los métodos tradicionales.
+            </p>
+            <img src="imagenes/ejemplo.jpg" alt="Ejemplo aplicación Mendix">
+            <br><br>
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        </section>
+
+        <!-- Sección Ventajas -->
+        <section id="ventajas">
+            <h1>Ventajas de trabajar con Mendix</h1>
+            <p>
+                Mendix ofrece múltiples ventajas: desarrollo hasta 10 veces más rápido, menos recursos,
+                integración con sistemas existentes, aplicaciones multiplataforma, colaboración entre
+                usuarios de negocio y desarrolladores, y escalabilidad en la nube.
+            </p>
+        </section>
+
+        <!-- Sección Casos -->
+        <section id="casos">
+            <h1>Casos de uso de Mendix</h1>
+            <p>Los casos de uso abarcan múltiples industrias como finanzas, energía, seguros y manufactura:</p>
+            <ol>
+                <li><a href="https://app.theirstack.com/home?search-company=Siemens" target="_blank" rel="noopener noreferrer">Siemens</a></li>
+                <li><a href="https://app.theirstack.com/home?search-company=Zurich%20Insurance" target="_blank" rel="noopener noreferrer">Zurich</a></li>
+                <li><a href="https://app.theirstack.com/home?search-company=Capgemini" target="_blank" rel="noopener noreferrer">Capgemini</a></li>
+                <li><a href="https://app.theirstack.com/home?search-company=Enexis" target="_blank" rel="noopener noreferrer">Enexis</a></li>
+                <li><a href="https://app.theirstack.com/home?search-company=PwC" target="_blank" rel="noopener noreferrer">PwC</a></li>
+            </ol>
+            <img src="imagenes/animacion.gif" alt="Ejemplo animación Mendix">
+        </section>
+
+        <!-- Sección Recursos -->
+        <section id="recursos">
+            <h1>Recursos de aprendizaje</h1>
+            <p>Existen múltiples recursos para aprender Mendix, entre ellos:</p>
+            <ul>
+                <li><a href="https://academy.mendix.com/link/home" target="_blank" rel="noopener noreferrer">Mendix Academy</a></li>
+                <li><a href="https://community.mendix.com/" target="_blank" rel="noopener noreferrer">Foros de la comunidad</a></li>
+                <li><a href="https://www.youtube.com/channel/UCM8pMKzsNP9sQ0IoANQ7FBg" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://docs.mendix.com/" target="_blank" rel="noopener noreferrer">Documentación oficial</a></li>
+                <li><a href="https://medium.com/tag/mendix" target="_blank" rel="noopener noreferrer">Artículos en Medium</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Página sobre Mendix — Proyecto académico</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+</body>
+</html>
+
